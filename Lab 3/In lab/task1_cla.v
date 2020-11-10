@@ -18,6 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+//4 bit Carry Look Ahead adder verilog code
 module task1_cla(S, Cout, A, B, Cin);
 output [3:0] S;
 output Cout;
