@@ -18,6 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+// 4 bit ripple carry adder created to further design 16 bit ripple carry adder
 module rca_4bit(Cout,S,A,B,Cin);
 output Cout;
 output [3:0] S;
