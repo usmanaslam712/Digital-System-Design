@@ -18,6 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+//half adder created for 16 bit ripple carry adder
 module half_adder(sum, carry, A, B);
   input A,B;
   output sum, carry;
