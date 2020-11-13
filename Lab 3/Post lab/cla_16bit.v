@@ -18,6 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+//16 bit Carry Look Ahead Adder
 module cla_16bit(S, Cout, A, B, Cin);
 output [15:0] S;
 output Cout;
