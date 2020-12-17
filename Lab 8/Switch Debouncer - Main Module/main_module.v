@@ -46,7 +46,7 @@ wire [3:0] bcd_input; //wire for bcd to seven segment
 //UPPER PART - FSM & COUNTER
 //up_down#(25,25000000) g1 (count1,sclk1,0,1,rst,clk); //counter1 //0 ascending counting //1 enable
 FSM a1(out,Ct,Td,x,clk,rst);
-up_down#(12,4096) g2 (Td,w1,0,Ct,rst,out); //counter2 //0 ascending counting //Ct (clear timer) for enable //Td (timer done) for count
+  up_down#(12,4096) g2 (Td,w1,0,1,Ct,out); //counter2 //0 ascending counting //Ct (clear timer) for rst //Td (timer done) for count
 
 //LOWER PART SLOW CLOCK AND COUNTER
 up_down#(18,200000) g3 (count3,sclk3,0,1,rst,clk); //counter3 //0 ascending counting //1 enable
